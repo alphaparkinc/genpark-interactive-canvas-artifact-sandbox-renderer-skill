@@ -1,0 +1,38 @@
+{
+  "name": "genpark-interactive-canvas-artifact-sandbox-renderer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Live interactive canvas sandbox rendering reactive React, SVG, and HTML visual artifacts in isolated iframes.",
+  "author": "genpark",
+  "category": "interactive-ui",
+  "tags": [
+    "interactive-canvas",
+    "claude-artifacts",
+    "sandbox-renderer",
+    "react-preview",
+    "svg-canvas"
+  ],
+  "inputs": {
+    "artifact_type": {
+      "type": "string"
+    },
+    "spec_prompt": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "canvas_session_id": {
+      "type": "string"
+    },
+    "iframe_sandbox_isolated": {
+      "type": "boolean"
+    },
+    "dom_render_latency_ms": {
+      "type": "integer"
+    },
+    "sandbox_view_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
